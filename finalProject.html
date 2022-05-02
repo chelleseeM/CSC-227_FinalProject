@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSC-227 Final Project</title>
+<style>
+.banner {
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+<div class="banner">
+<h1>Chelsey Mincey</h1>
+<br>
+<h2>CSC.227.0002</h2>
+<h2>Build Your Resume</h2>
+</div>
+<form>
+<div class="personalInfo">
+    <fieldset>
+    <legend>Enter your personal information below</legend><br>
+        <label>Full Name:</label><br>
+        <input type="text" name="fullName" id="fullName"><br>
+        <br>
+        <label>City, State:</label><br>
+        <input type="text" name="cityState" id="cityState"><br>
+        <br>
+        <label>Zip Code:</label><br>
+        <input type="text" name="zipCode" id="zipCode"><br>
+        <br>
+        <label>Phone Number:</label><br>
+        <input type="text" name="phoneNumber" id="phoneNumber"><br>
+        <br>
+        <label>Email Address:</label><br>
+        <input type="text" name="emailAddress" id="emailAddress" required><br>
+        <br>
+        <label>LinkedIn:</label><br>
+        <input type="text" name="linkedIn" id="linkedIn"><br>
+        <br>
+        <label>Facebook:</label><br>
+        <input type="text" name="facebook" id="facebook"><br>
+        <br>
+        <label>Twitter:</label><br>
+        <input type="text" name="twitter" id="twitter"><br><br>
+    </fieldset>
+</div>
+<br>
+<div class="jobInfo">
+    <fieldset>
+    <legend>Enter your professional information below</legend><br>
+        <label>Job Title:</label><br>
+        <input type="text" name="jobTitle" id="jobTitle"><br>
+        <br>
+        <label>Personal Objective 1:</label><br>
+        <input type="text" name="objectiveOne" id="objectiveOne"><br>
+        <br>
+        <label>Personal Objective 2:</label><br>
+        <input type="text" name="objectiveTwo" id="objectiveTwo"><br>
+        <br>
+        <label>Personal Objective 3:</label><br>
+        <input type="text" name="objectiveThree" id="objectiveThree"><br><br>
+    </fieldset>
+</div>
+<br>
+<div class="skills">
+    <fieldset>
+    <legend>Enter your skills below</legend><br>
+        <label>List your customer service skills (comma separated):</label><br>
+        <input type="text" name="skills" id="custServSkills"><br><br>
+        <label>List your technical skills (comma separated):</label><br>
+        <input type="text" name="skills" id="techSkills"><br><br>
+        <label>List your writing skills (comma separated):</label><br>
+        <input type="text" name="skills" id="writingSkills"><br><br>
+    </fieldset>
+</div>
+<br>
+<div class="education">
+    <fieldset>
+        <legend>Enter your educational background:</legend><br>
+        <label for="education">University name, city/state, major, degree and graduation date:</label><br>
+        <textarea id="education" name="education" rows="4" cols="60"></textarea>
+    </fieldset><br>
+</div>
+<div class="work">
+    <fieldset>
+        <legend>Enter your work experience in chronological order:</legend><br>
+        <fieldset>
+            <label>Start Date:</label><br>
+            <input type="date" name="workStartDateOne" id="workStartDateOne"><br>
+            <br>
+            <label>End Date:</label><br>
+            <input type="date" name="workEndDateOne" id="workEndDateOne"><br>
+            <br>
+            <label for="experienceOne">Company, city/state, job title and job duties:</label><br>
+            <textarea id="experienceOne" name="experienceOne" rows="15" cols="60"></textarea>
+        <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <label>Start Date:</label><br>
+            <input type="date" name="workStartDateTwo" id="workStartDateTwo"><br>
+            <br>
+            <label>End Date:</label><br>
+            <input type="date" name="workEndDateTwo" id="workEndDateTwo"><br>
+            <br>
+            <label for="experienceTwo">Company, city/state, job title and job duties:</label><br>
+            <textarea id="experienceTwo" name="experienceTwo" rows="15" cols="60"></textarea>
+        <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <label>Start Date:</label><br>
+            <input type="date" name="workStartDateThree" id="workStartDateThree"><br>
+            <br>
+            <label>End Date:</label><br>
+            <input type="date" name="workEndDateThree" id="workEndDateThree"><br>
+            <br>
+            <label for="experienceThree">Company, city/state, job title and job duties:</label><br>
+            <textarea id="experienceThree" name="experienceThree" rows="15" cols="60"></textarea>
+        <br>
+        </fieldset>
+        <br>
+        </fieldset><br>
+</div>
+<div class="references">
+    <fieldset>
+        <legend>Enter three references:</legend><br>
+        <label for="referenceOne">Name, phone number and email:</label><br>
+        <textarea id="referenceOne" name="referenceOne" rows="3" cols="50"></textarea>
+        <br>
+        <label for="referenceTwo">Name, phone number and email:</label><br>
+        <textarea id="referenceTwo" name="referenceTwo" rows="3" cols="50"></textarea>
+        <br>
+        <label for="referenceThree">Name, phone number and email:</label><br>
+        <textarea id="referenceThree" name="referenceThree" rows="3" cols="50"></textarea>
+        <br>
+    </fieldset>
+</div>
+<br>
+<input type="submit" id="myButton" value="Create Resume">
+</form>
+<script src="projectJS.js"></script>
+</body>
+</html>
